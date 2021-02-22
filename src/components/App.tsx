@@ -1,10 +1,10 @@
 import {Route, HashRouter as Router} from 'react-router-dom';
 
 import {Detail} from '../routes/Detail';
+import {FC} from 'react';
 import {Home} from '../routes/Home';
-import React from 'react';
 
-function App() {
+const App: FC = () => {
   return (
     <Router>
       <Route exact path='/' component={Home} />
