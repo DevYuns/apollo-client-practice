@@ -1,8 +1,8 @@
-import {ApolloClient, InMemoryCache, NormalizedCacheObject, gql} from '@apollo/client';
+import {ApolloClient, InMemoryCache, NormalizedCacheObject} from '@apollo/client';
 
 const client: ApolloClient<NormalizedCacheObject> = new ApolloClient({
   cache: new InMemoryCache(),
-  uri: "https:movieql.now.sh"
+  uri: "http://localhost:4000/"
 });
 
 export default client;
